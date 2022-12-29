@@ -8,7 +8,7 @@ Thank you...
 
 ========================================================================================
 
-# kasir-sederhana
+# kasir sederhana
 
 Untuk menggunakan ini: Cukup masukan angka dari menu, tidak perlu memasukan nama menunya, cukup angka menunya saja atau urutannya saja.
 
