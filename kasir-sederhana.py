@@ -5,7 +5,7 @@ pilihan = "y"
 # lakukan looping selama pilihan bernilai "y"
 while pilihan == "y":
 
-# Tampilkan daftar menu kopi yang tersedia di warung
+# tampilkan daftar menu kopi yang tersedia di warung
     print("""
 =======================================
 =============Warung Python=============
@@ -22,19 +22,19 @@ while pilihan == "y":
     menu = str(input("Masukan menu kopi ="))
     jumlah = int(input("Masukkan jumlah pesanan ="))
 
-    # Lakukan perhitungan biaya berdasarkan pilihan menu kopi
+    # lakukan perhitungan biaya berdasarkan pilihan menu kopi
     if menu == "1":
         nama_menu = "Kopi Python"
         harga = (15000 * jumlah)
         ppn = int(harga * 0.1)
         if jumlah >= 5:
 
-            # Berikan diskon 20% jika jumlah pesanan lebih dari 5
+            # berikan diskon 20% jika jumlah pesanan lebih dari 5
             diskon = int(harga * 0.2)
             total = int(harga - diskon + ppn)
         else:
 
-            # Jika jumlah pesanan kurang dari 5, tidak ada diskon
+            # jika jumlah pesanan kurang dari 5, tidak ada diskon
             diskon = 0
             total = int(harga + ppn)
     elif menu == "2":
@@ -59,16 +59,16 @@ while pilihan == "y":
         ppn = int(harga * 0.1)
         diskon = 0
         total = int(harga + ppn)
-    # Jika pilihan menu salah, inisialisasi nama menu, harga, ppn, dan diskon dengan "-"
+    # jika pilihan menu salah, inisialisasi nama menu, harga, ppn, dan diskon dengan "-"
     else:
-        # Tampilkan pesan error jika pilihan menu salah
+        # tampilkan pesan error jika pilihan menu salah
         nama_menu = "-"
         harga = "-"
         ppn = "-"
         diskon = "-"
         total = "-"
 
-    # Tampilkan rincian pembelian kopi ke pengguna    
+    # tampilkan rincian pembelian kopi ke pengguna    
     print("=======================================")
     print("=============Warung Python=============")
     print("=======================================")
@@ -82,5 +82,5 @@ while pilihan == "y":
     print("=======================================")
     print("=============Warung Python=============")
     print("==============Terimakasih==============")
-    # Minta pengguna memasukkan pilihan untuk kembali menghitung atau keluar dari program
+    # minta pengguna memasukkan pilihan untuk kembali menghitung atau keluar dari program
     pilihan = input("Pilih y untuk kembali menghitung y/n =")
